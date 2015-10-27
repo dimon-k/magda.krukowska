@@ -1,0 +1,179 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	font-family: 'Oswald', sans-serif; 
+	font-weight: 300;
+	letter-spacing: 2px;
+	color: #322121;
+	min-width: 900px;
+	overflow-y: hidden !important;
+}
+
+.wrap_content {
+	max-width: 1100px;
+	margin: auto;
+	padding: 70px 0 0 0;
+}
+
+#menu {
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+	min-width: 900px;
+	background-color: #4BBFC3;
+	min-height: 48px;
+	margin-top: 0;
+	padding-top: 20px;
+	box-shadow: 0px 1px 5px #888888;
+}
+
+#menu_right {
+	float: right;
+	margin-right: 120px;
+}
+
+#logo_left {
+	margin: -35px 0 -20px 60px;
+	float: left;
+	font-size: 22px;
+	line-height: 25px;
+}
+
+#logo_left a {
+	text-decoration: none;
+	color: #322121;
+}
+
+#menu li {
+	list-style: none;
+	display: inline;
+	margin: 0 15px 0 15px;
+}
+
+#menu li a {
+	text-decoration: none;
+	color: #322121;
+	font-size: 18px;
+}
+
+#menu li a:hover {
+	color: #FFFAF5;
+}
+
+#menu li.active a:hover {
+	color: #FFFAF5;
+}
+
+#menu li.active a {
+	color: #FFFAF5;
+}
+
+.section p {
+	text-align: center;
+	width: 80%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+#cover_photo {
+	background-image: asset-data-url("cover.jpg");
+	background-repeat: no-repeat;
+	ackground-attachment: fixed;
+	background-position: center; 
+	background-size: cover;
+}
+
+#cover_name {
+	font-size: 35px;
+	line-height: 55px;
+	text-align: left !important;
+	margin: -210px 0 0 105px;
+	text-shadow: 2px 2px 3px #FFFAF5;
+}
+
+#cover_description {
+	font-size: 18px;
+	line-height: 30px;
+	margin: 0 0 0 120px;
+	text-shadow: 2px 2px 3px #FFFAF5;
+	list-style-type: none;
+}
+
+.td_50 {
+	width: 50%;
+}
+
+#magda_photo {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+}
+
+// HERE STARTS CSS FOR SIMPLE LIGHBOX!!! --------------------------------------------------------
+
+#container_gallery * {
+  box-sizing: border-box;
+}
+
+.container a {
+  color: #4ab19a;
+}
+
+.clear {
+  clear: both;
+  float: none;
+  width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  min-width: 900px;
+  width: 80%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container .gallery a img {
+  float: left;
+  width: 20%;
+  height: auto;
+  border: 0px solid #FFFAF5;
+  -webkit-transition: -webkit-transform .15s ease;
+  -moz-transition: -moz-transform .15s ease;
+  -o-transition: -o-transform .15s ease;
+  -ms-transition: -ms-transform .15s ease;
+  transition: transform .15s ease;
+  position: relative;
+}
+
+.container .gallery a:hover img {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  z-index: 5;
+}
+
+.container .gallery a.big img {
+  width: 40%;
+}
+
+.align-center {
+  text-align: center;
+}
+
+// HERE ENDS CSS FOR SIMPLE LIGHBOX!!! --------------------------------------------------------
+
+
+
+
+
+// HERE STARTS CSS FOR CONTACT FORM!!! --------------------------------------------------------
+
+.hidden { display: none; }

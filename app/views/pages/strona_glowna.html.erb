@@ -1,0 +1,85 @@
+<ul id="menu">
+		<div id="logo_left">
+			<p><a href="#gora">MAGDA<br/>KRUKOWSKA</p>
+		</div>
+		<div id="menu_right">
+    		<li data-menuanchor="gora" class="active"><a href="#gora">GÓRA</a></li>
+    		<li data-menuanchor="moja_osoba"><a href="#moja_osoba">MOJA OSOBA</a></li>
+    		<li data-menuanchor="moje_pracy"><a href="#moje_pracy">MOJE PRACY</a></li>
+    		<li data-menuanchor="skontaktuj_sie_ze_mna"><a href="#skontaktuj_sie_ze_mna">SKONTAKTUJ SIĘ ZE MNĄ</a></li>
+    	</div>
+</ul>
+
+<div id="fullpage">
+    <div class="section" id="cover_photo">
+    	<div class="wrap_content">
+    		<p id="cover_name">PORTRETY NA ŻYCZENIE</p>
+    		<ul id="cover_description">
+    			<li>- Na urodziny</li>
+    			<li>- Na ślub</li>
+    			<li>- Na graduację</li>
+    			<li>- Na rocznicę</li>
+    			<li>- I po prostu dla przyjemności...</li>
+    		</ul>
+    	</div>
+	</div>
+    <div class="section">
+    	<div class="wrap_content">
+    		<table>
+    		<tr>
+    			<td class="td_50">
+    				<%= image_tag("magda.jpg", :alt => "Magda Krukowska", :id => "magda_photo") %>
+				</td>
+				<td class="td_50">
+					<p id="magda_description">Jestem artystą, jestem malarzem, jestem profesjonalistą, jestem Magdą Krukowską. Rysuję portrety dowolnie wybranych osób na zamówienie. Szkic krewnych, przyjaciół lub znajomych to idealny prezent na każdą okazję. Prace wykonuję ołówkami i kredkami najwyższej jakości. Przykładam wagę do detali i skrupulatnie odtwarzam każde zdjęcie. Jeżeli jesteś zainteresowany, w celu wyceny, wyślij zdjęcie dobrej jakości poprzez formularz dostępny w sekcji „Skontaktuj się ze mną”. Ustalimy format pracy oraz czas realizacji. Z mojej strony gwarantuję 100% zadowolenie i satysfakcję z naszej współpracy.</p>
+				</td>
+			</tr>
+			</table>
+		</div>
+    </div>
+    <div class="section">
+    	<div class="wrap_content" id="container_gallery">
+			<div class="container">
+    			<div class="gallery">	
+					<a href="assets/image1.jpg" class="big"><img src="assets/thumbs/thumb1.jpg" alt="" title="Leonardo DiCaprio" /></a>
+					<a href="assets/image2.jpg"><img src="assets/thumbs/thumb2.jpg" alt="" title="Johnny Depp"/></a>
+					<a href="assets/image3.jpg"><img src="assets/thumbs/thumb3.jpg" alt="" title="Image 3"/></a>
+					<a href="assets/image4.jpg"><img src="assets/thumbs/thumb4.jpg" alt="" title="Angelina Jolie"/></a>
+					<div class="clear"></div>
+			
+					<a href="assets/image5.jpg"><img src="assets/thumbs/thumb5.jpg" alt="" title="Jack Nicholson"/></a>
+					<a href="assets/image6.jpg"><img src="assets/thumbs/thumb6.jpg" alt="" title="Image 6"/></a>
+					<a href="assets/image7.jpg" class="big"><img src="assets/thumbs/thumb7.jpg" alt="" title="Magda Krukowska"/></a>
+					<a href="assets/image8.jpg"><img src="assets/thumbs/thumb8.jpg" alt="" title="Image 8"/></a>
+					<div class="clear"></div>
+			
+					<a href="assets/image9.jpg" class="big"><img src="assets/thumbs/thumb9.jpg" alt="" title="SHREK"/></a>
+					<a href="assets/image10.jpg"><img src="assets/thumbs/thumb10.jpg" alt="" title="Image 10"/></a>
+					<a href="assets/image11.jpg"><img src="assets/thumbs/thumb11.jpg" alt="" title="Adele"/></a>
+					<a href="assets/image12.jpg"><img src="assets/thumbs/thumb12.jpg" alt="" title="Image 12"/></a>
+					<div class="clear"></div>
+			
+				</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="section">
+    	<div class="wrap_content">
+    		<p>Section 4</p>
+    			<div id="form_itself">
+      				<%= form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
+        			<%= f.text_field :name, :required => true, :class => "contact_field", :placeholder => "Imię i nazwisko" %><br/><br/>
+        			<%= f.text_field :email, :required => true, :class => "contact_field", :placeholder => "Email" %><br/><br/>
+        			<%= f.text_area :message, :as => :text, :required => true, :class => "contact_field", :id => "contact_area", :placeholder => "Wiadomość" %><br/>
+        			<div class= "hidden">
+            			<%= f.text_field :nickname %><br/>
+        			</div>
+      				<div>
+        				</br>
+          				<%= f.submit 'WYŚLIJ', :class=> "btn btn-primary" %>
+      				</div>
+    				<% end %>
+  				</div>
+    	</div>
+    </div>
+</div>
